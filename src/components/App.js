@@ -26,7 +26,7 @@ class App extends React.Component {
             <div className="tab">Favourites</div>
           </div>
           <div className="list">
-            {list.map((movie,index)=>(<MovieCard movie={movie} key={`movies-${index}`}/>))}
+            {list.map((movie,index)=>(<MovieCard movie={movie} key={`movies-${index}`} dispatch={this.props.store.dispatch}/>))}
           </div>
         </div>
       </div>
